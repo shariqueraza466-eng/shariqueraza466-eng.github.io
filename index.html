@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md Sharique Raza – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef1f6;--surface:#ffffff;--ink:#14213d;--muted:#4d5b78;--line:#d3d9e6;--accent:#2547a8;--accent-ink:#ffffff;--mark:#f2b134;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1626;--surface:#17203a;--ink:#eaf0ff;--muted:#a9b6d3;--line:#2a3558;--accent:#8fb0ff;--accent-ink:#0f1626;--mark:#f2b134}
+}
+:root[data-theme="dark"]{--bg:#0f1626;--surface:#17203a;--ink:#eaf0ff;--muted:#a9b6d3;--line:#2a3558;--accent:#8fb0ff;--accent-ink:#0f1626;--mark:#f2b134}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+header.top{border-bottom:1px solid var(--line)}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;padding:1rem 0}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;padding:.25rem 0}
+nav a:hover{color:var(--ink)}
+.hero{padding:3.5rem 0 3rem;display:flex;flex-wrap:wrap;gap:2rem;align-items:flex-end;justify-content:space-between}
+.hero h1{font:800 clamp(2.6rem,9vw,5.5rem)/.98 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.03em;margin:0;max-width:11ch}
+.hero h1 span{display:block;background:linear-gradient(transparent 62%,var(--mark) 62% 90%,transparent 90%);width:fit-content}
+.hero p{max-width:34ch;color:var(--muted);margin:0 0 .5rem;font-size:1.1rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+section{padding:2.5rem 0;border-top:1px solid var(--line)}
+h2{font:700 1.75rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 1.25rem;letter-spacing:-.01em}
+h3{font:700 1.15rem/1.3 "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 .25rem}
+.meta{color:var(--muted);margin:0 0 .75rem;font-size:.95rem}
+.row{display:flex;flex-wrap:wrap;gap:1.25rem}
+.row>*{flex:1 1 260px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.25rem}
+.card ul{margin:.5rem 0 0;padding-left:1.1rem}
+.card li{margin:.3rem 0}
+.tag{display:inline-block;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.1rem .7rem;font-size:.85rem;margin:0 .3rem .3rem 0;color:var(--muted)}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.tabs button{font:inherit;font-weight:600;padding:.45rem 1rem;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.skill{display:none}
+.skill.show{display:block}
+.skill p{margin:0 0 .75rem;color:var(--muted)}
+.certs{list-style:none;margin:0;padding:0}
+.certs li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding:.85rem 0;border-bottom:1px solid var(--line)}
+.certs li:last-child{border-bottom:0}
+.certs small{color:var(--muted)}
+.contact a{display:block;margin:.35rem 0;font-weight:500;overflow-wrap:anywhere}
+footer{padding:2rem 0 3rem;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <nav aria-label="Main">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <div class="hero" id="about">
+    <h1>Md Sharique <span>Raza</span></h1>
+    <div>
+      <p>BCA graduate from Manipal University Jaipur. I build websites, work with databases and data tools, and I’m looking for an entry-level role in software, data, IT support or business development.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="#projects">See my projects</a>
+      </div>
+    </div>
+  </div>
+
+  <section aria-labelledby="edu">
+    <h2 id="edu">Education</h2>
+    <div class="row">
+      <div class="card"><h3>Bachelor of Computer Applications</h3><p class="meta">Manipal University Jaipur, Rajasthan · 2023–2026</p><p style="margin:0">CGPA: 8.13</p></div>
+      <div class="card"><h3>Higher Secondary (12th)</h3><p class="meta">Jagjivan Mahavidyalaya, Dehri · BSEB · 2023</p><p style="margin:0">Score: 75%</p></div>
+    </div>
+  </section>
+
+  <section id="skills" aria-labelledby="sk">
+    <h2 id="sk">Skills</h2>
+    <div class="tabs" role="group" aria-label="Skill groups"></div>
+    <div class="card" id="skillbox">
+      <div class="skill" data-g="Code"><p>Programming and web</p><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span><span class="tag">Python</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">MySQL</span><span class="tag">SQL</span></div>
+      <div class="skill" data-g="Data and AI"><p>Data, AI and cloud</p><span class="tag">Generative AI</span><span class="tag">Machine Learning Basics</span><span class="tag">AWS Cloud</span><span class="tag">Jupyter Notebook</span><span class="tag">Data Analysis</span><span class="tag">Research Methodologies</span></div>
+      <div class="skill" data-g="Core CS"><p>Computer science fundamentals</p><span class="tag">Data Structures</span><span class="tag">OOP</span><span class="tag">DBMS</span><span class="tag">Operating Systems</span><span class="tag">Computer Networks</span><span class="tag">SDLC</span></div>
+      <div class="skill" data-g="BMS"><p>Building Management Systems</p><span class="tag">Direct Digital Control (DDC)</span><span class="tag">SCADA</span><span class="tag">HVAC</span><span class="tag">Fire Alarm Systems</span><span class="tag">AC Drives</span><span class="tag">Panel Designing</span></div>
+      <div class="skill" data-g="Business"><p>Business and people skills</p><span class="tag">Lead Generation</span><span class="tag">Client Communication</span><span class="tag">CRM</span><span class="tag">Negotiation</span><span class="tag">Market Research</span><span class="tag">Presentations</span><span class="tag">Problem Solving</span><span class="tag">Teamwork</span><span class="tag">Time Management</span></div>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="pr">
+    <h2 id="pr">Projects</h2>
+    <div class="row">
+      <article class="card">
+        <h3>E-Commerce Website</h3><p class="meta">Shopify</p>
+        <ul><li>Built a complete online store with product listings, collections and easy navigation.</li><li>Customized the theme and product pages for a clean, mobile-friendly experience.</li><li>Set up checkout and store settings for smooth customer orders.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Personal Portfolio Website</h3><p class="meta">HTML, CSS, JavaScript</p>
+        <ul><li>Responsive site presenting my education, skills and certifications.</li><li>Semantic HTML and CSS flexbox keep the layout working on mobile and desktop.</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="certs" aria-labelledby="ce">
+    <h2 id="ce">Certifications</h2>
+    <div class="card"><ul class="certs">
+      <li><span>AI Technologies, Tools &amp; Cloud Certification Specialization<br><small>EDUCBA via Coursera</small></span><small>Jul 2026</small></li>
+      <li><span>Master AI &amp; AWS Cloud Skills: Analyze, Build, Deploy<br><small>EDUCBA via Coursera</small></span><small>Jul 2026</small></li>
+      <li><span>Tools for Data Science<br><small>IBM via Coursera · verified Credly badge</small></span><small>Jul 2026</small></li>
+      <li><span>Research Methodologies<br><small>Queen Mary University of London via Coursera</small></span><small>Jul 2026</small></li>
+      <li><span>Diploma in Building Management System (BMS)<br><small>Rashtriya Technical Institute, Jamshedpur · Grade A, 83%</small></span><small>Jun 2024</small></li>
+      <li><span>Advanced Diploma in Computer Application (ADCA)<br><small>Oxford Computer Center · 95.75%, Excellent</small></span><small>Dec 2021</small></li>
+    </ul></div>
+  </section>
+
+  <section id="contact" aria-labelledby="co">
+    <h2 id="co">Contact</h2>
+    <div class="card contact">
+      <p class="meta">Dehri, Bihar · English (Professional), Hindi (Native)</p>
+      <a href="mailto:shariqueraza466@gmail.com">shariqueraza466@gmail.com</a>
+      <a href="tel:+919798986651">+91 97989 86651</a>
+      <a href="https://linkedin.com/in/mdshariqueraza01" target="_blank" rel="noopener">linkedin.com/in/mdshariqueraza01</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Md Sharique Raza</div></footer>
+
+<script>
+(function(){
+  var skills=document.querySelectorAll('.skill'),tabs=document.querySelector('.tabs');
+  function show(name){
+    skills.forEach(function(s){s.classList.toggle('show',s.dataset.g===name)});
+    tabs.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(b.textContent===name))});
+  }
+  skills.forEach(function(s){
+    var b=document.createElement('button');b.type='button';b.textContent=s.dataset.g;
+    b.addEventListener('click',function(){show(s.dataset.g)});tabs.appendChild(b);
+  });
+  show(skills[0].dataset.g);
+})();
+</script>
+</body>
+</html>
